@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel ="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container-fluid d-flex justify-content-center align-items-center" style="height : 100vh">
+    <form class = "border border-2 rounded border-dark p-3 w-25 bg-dark text-white">
+        <h3 class = "bi bi-person-fill">Register User</h3>
+
+        <div class = "mb-3">
+            <label for="UserName" class="form-label fw-bold"> User Name</label>
+            <div> 
+                <input type = "text" class="form-control" name = "UserName">
+            </div>
+        </div>
+
+        
+        <div class = "mb-3">
+            <label for="Password"  class="form-label fw-bold"> Password</label>
+            <div> 
+                <input type = "password" name = "Password" class="form-control">
+            </div>
+        </div>
+
+        
+        <div class = "mb-3">
+            <label for="Age"  class="form-label fw-bold "> Age</label>
+            <div> 
+                <input type = "range" class="form-range" name = "Age">
+            </div>
+        </div>
+
+         
+        <div class = "mb-3">
+            <label for="Age"  class="form-label fw-bold">Your city</label>
+            <div> 
+                <select name ="City" class="form-select">
+                    <option>Select City</option>
+                    <option>Hyderabad</option>
+                    <option>Kavali</option>
+                    <option>Bangalore</option>
+                </select>
+            </div>
+        </div>
+
+        <div class = "mb-3">
+               <label  class="form-label fw-bold">Subscribe</label>
+               <div class="form-switch">
+                  <input type="checkbox" checked class="form-check-input">
+                   <label class="form-check-label">Yes</label> 
+               </div>
+        </div>
+        
+
+        <div class = "mb-3">
+            <button class="btn btn-warning w-100">Register</button>
+        </div>
+    </form>
+
+     <script src = "../node_modules/jquery/dist/jquery.js"></script>
+     <script src ="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

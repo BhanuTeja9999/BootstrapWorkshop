@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel ="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container-fluid">
+    <button class = "btn btn-primary mt-2" data-bs-toggle = "modal" data-bs-target="#login" >Login</button>
+    <button class ="btn btn-danger mt-2 ms-2" data-bs-toggle = "modal" data-bs-target="#women-fashion">Fashion</button>
+    
+
+    <!--women fashion details pop up -->
+    <div class="modal" id="women-fashion" >
+        <div class ="modal-dialog modal-dialog-centered">
+            <div class = "modal-content">
+                <div class ="modal-header">
+                  <h2>Women fashion</h2>
+                  <button class = "btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+              <div class ="modal-body">
+                    <img src="images/women-fashion.jpg" alt="women-fashion" width="400" height="300">
+              </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-- Login details pop up -->
+    <!-- Modal component starts here -->
+    <div class = "modal fade" id = "login">
+        <div class="modal-dialog modal-dialog-scrollable">
+
+            <!--every content starts here -->
+            <div class="modal-content ">
+                <!--modal header -->
+
+                <div class="modal-header">
+                    <h1 class="bi bi-person-fill"> User Login</h1>
+                    <button class = "btn btn-close" data-bs-dismiss = "modal"></button>
+                </div>
+                
+                <!-- modal body-->
+                <div class ="modal-body">
+                    <dl>
+                        <dt>Username</dt>
+                        <dd><input type ="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type = "password" class="form-control"></dd>
+                    </dl>
+                    <dl>
+                        <dt>Username</dt>
+                        <dd><input type ="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type = "password" class="form-control"></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Username</dt>
+                        <dd><input type ="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type = "password" class="form-control"></dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Username</dt>
+                        <dd><input type ="text" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type = "password" class="form-control"></dd>
+                    </dl>
+                </div>
+  
+                <div class = "modal-footer">
+                    <button class = "btn btn-primary">Submit</button>
+                    <button class = "btn btn-danger" data-bs-dismiss ="modal">close</button>
+                </div>
+        </div>
+    </div>
+    
+    <script src = "../node_modules/jquery/dist/jquery.js"></script>
+    <script src ="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
